@@ -1,0 +1,28 @@
+{
+  "name": "link-shortener",
+  "version": "1.0.0",
+  "description": "A link-shortening engine for personal domain link shortening",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "setup": "node setup.js",
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daviscodesbugs/link-shortener.git"
+  },
+  "author": "daviscodesbugs",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/daviscodesbugs/link-shortener/issues"
+  },
+  "homepage": "https://github.com/daviscodesbugs/link-shortener#readme",
+  "dependencies": {
+    "async": "^2.5.0",
+    "hapi": "^16.6.2",
+    "inquirer": "^3.3.0",
+    "randomstring": "^1.1.5",
+    "sqlite3": "^3.1.13"
+  }
+}

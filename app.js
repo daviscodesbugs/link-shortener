@@ -8,7 +8,13 @@ const whilst = require('async').whilst;
 
 const db = new sqlite.Database('./links.db');
 const server = new Hapi.Server();
-server.connection({ port: 5270, host: 'localhost' });
+server.connection({
+	port: 5270,
+	host: "0.0.0.0",
+	routes: {
+		cors: true
+	}
+});
 
 server.route({
 	method: 'GET',
